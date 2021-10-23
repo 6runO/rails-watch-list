@@ -1,0 +1,17 @@
+<div class="container mt-4">
+
+  <h2><%= @list.name %></h2>
+
+  <p>Number of Movies: <%= @list.movies.count %></p>
+
+  <h3>Movies</h3>
+  <% @list.bookmarks.each do |bookmark| %>
+    <%= render "card", bookmark: bookmark %>
+    <%# <%= render 'card' %>
+  <% end %>
+
+  <%= link_to "Add a movie", new_list_bookmark_path(@list), class: "btn btn-success" %>
+  <hr>
+  <%= link_to "Back to list", lists_path %>
+
+</div>

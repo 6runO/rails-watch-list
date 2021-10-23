@@ -1,0 +1,14 @@
+<div class="card-trip">
+  <img src=<%= bookmark.movie.poster_url %>/>
+  <div class="card-trip-infos">
+    <div>
+      <h2><%= bookmark.movie.title %></h2>
+      <p><%= bookmark.movie.overview %></p>
+      <p>Rating: <%= bookmark.movie.rating %></p>
+      <p><%= bookmark.comment %></p>
+    </div>
+    <h2 class="card-trip-pricing"><%= link_to 'Delete', bookmark_path(bookmark), method: :delete, data: { confirm: 'Are you sure?'}%></h2>
+  </div>
+</div>
+
+<%# image_tag movie.poster_url, alt: movie.title, width: 100 %>
