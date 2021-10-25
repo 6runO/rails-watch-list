@@ -1,0 +1,7 @@
+<div class="p-4 form-new-movie">
+  <%= simple_form_for [@list, @bookmark] do |f| %>
+    <%= f.input :comment %>
+    <%= f.association :movie, collection: Movie.all %>
+    <%= f.submit "New Movie", class:"btn btn-success" %>
+  <% end %>
+</div>
