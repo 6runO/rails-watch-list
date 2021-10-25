@@ -1,10 +1,6 @@
 class BookmarksController < ApplicationController
   before_action :set_list, except: [:destroy]
 
-  # def new
-  #   @bookmark = Bookmark.new
-  # end
-
   def create
     @bookmark = Bookmark.new(bookmark_params)
     @bookmark.list = @list
