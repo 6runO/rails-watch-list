@@ -6,11 +6,11 @@
 
   <div class="container">
     <div class="row">
-    <div class="col-4 mb-4 d-flex align-items-stretch">
+    <div class="col-sm-6 col-lg-4 mb-4 d-flex align-items-stretch">
       <%= render "form" %>
     </div>
       <% @list.bookmarks.each do |bookmark| %>
-        <div class="col-4 mb-4 d-flex align-items-stretch">
+        <div class="col-sm-6 col-lg-4 mb-4 d-flex align-items-stretch">
           <%= render "card", bookmark: bookmark %>
         </div>
       <% end %>
@@ -21,6 +21,5 @@
   <%= link_to "Back to list", root_path %>
   <br>
   <br>
-
 
 </div>

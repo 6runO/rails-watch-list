@@ -22,7 +22,6 @@
   margin: 0;
 }
 
-
 .card-trip .card-trip-infos {
   padding: 16px;
   display: flex;
@@ -36,4 +35,12 @@
   right: 16px;
   top: -20px;
   width: 40px;
+}
+
+.card-delete {
+  bottom: 0
+}
+
+.star-filled {
+  color: rgb(255, 217, 0);
 }
